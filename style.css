@@ -4,17 +4,35 @@
  */
 
 .rolecolor-mention {
-  color: var(--color) !important;
-  background-color: var(--backgroundColor) !important;
-  padding: 0 2px !important;
+  padding: 0;
+  background: transparent;
+}
+
+.rolecolor-mention span {
+  color: var(--color);
+  background-color: var(--backgroundColor);
+  padding: 0 2px;
 }
 
 .rolecolor-mention:hover {
-  color: var(--hoveredColor) !important;
-  background-color: var(--color) !important;
   text-decoration: none !important;
 }
 
-.rolecolor-activity div {
+.rolecolor-mention:hover span {
+  color: var(--hoveredColor);
+  background-color: var(--color);
+}
+
+.headerNormal-T_seeN .rolecolor-colored-userpopout,
+.rolecolor-colored {
   color: var(--color) !important;
+}
+
+.headerNormal-T_seeN .rolecolor-colored-userpopout > span:not(.botTag-2WPJ74 ),
+.rolecolor-colored > * {
+  color: inherit;
+}
+
+.headerNormal-T_seeN .rolecolor-colored-userpopout span:not([class]) {
+  opacity: 0.6;
 }
